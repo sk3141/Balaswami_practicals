@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 using namespace std;
 
 class BankAccount
@@ -11,6 +12,12 @@ class BankAccount
     long int accNumber;
 
     public:
+    BankAccount(string depositor)
+    {
+        depositorName = depositor;
+        accBalance = 0.00;
+        accNumber = rand(); 
+    }
     void deposit(float amount)
     {
         accBalance += amount;
@@ -28,3 +35,12 @@ class BankAccount
         cout << "Account Balance :- " << accBalance << endl;
     }
 };
+
+int main()
+{
+    BankAccount d("Sahil");
+    d.deposit(500.25);
+    d.withdraw(250.00);
+    d.displayInfo();
+    return 0;
+}
