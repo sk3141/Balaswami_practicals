@@ -56,10 +56,13 @@ int main()
 {
     Vector v1(2,3,4);
     Vector v2(5,5,7);
+    Vector v3(0,0,0);
 
     cout << v1;
     cout << v2;
+    v3 = v1 + v2;
     cout << "v1 X 2 = " << v1 * 2;
     cout << "v2 X 3 = " << v2 * 3;
+    cout << "v1 + v2 = " << v3;
     return 0;
 }
