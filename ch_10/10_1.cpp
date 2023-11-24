@@ -1,33 +1,5 @@
-/*#include <iostream>
-#include <vector>
-using namespace std;
-
-int main()
-{
-    int n;
-    char name[50][50];
-    int code[50];
-    float cost[50];
-
-    cout << "Enter number of records to be entered :- ";
-    cin >> n;
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << "(Record" << i + 1 << ") " << "Name :- ";
-        cin >> name[i];
-        cout << "(Record" << i + 1 << ") " << "Code :- ";
-        cin >> code[i];
-        cout << "(Record" << i + 1 << ") " << "Cost :- ";
-        cin >> cost[i];
-    }
-
-    cout << "\n\n Inputted Details\n\n";
-
-    return 0;
-}*/
 #include <iostream>
-#include <iomanip>  // For setw
+#include <iomanip>  
 void printSeparatorLine(int width) {
     for (int i = 0; i < width; ++i) {
         std::cout << "-";
