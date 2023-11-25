@@ -49,6 +49,5 @@ int main()
     {
         std::cerr << "Error Occured in main() :" << e.what() << std::endl;
     }
-    system("cls");
     return 0;
 }
