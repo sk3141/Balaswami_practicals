@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include <cctype>
 
-int getInput(double &a, double &b)
+void getInput(double &a, double &b)
 {
     std::cout << "Enter number 1 :- ";
     std::cin >> a;
